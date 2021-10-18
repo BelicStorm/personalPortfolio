@@ -1,2 +1,3 @@
 # personalPortfolio
-Created with CodeSandbox
+
+Readme en progreso...
