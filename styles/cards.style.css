@@ -1,0 +1,241 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.card-menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 16px;
+}
+.card-menu label {
+  cursor: pointer;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container label {
+  width: 23%;
+  float: left;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #222222;
+  padding: 0.5%;
+  margin: 0.5%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+
+.card-container label {
+  font-family: system-ui;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#label-reset {
+  background: rgb(51, 49, 49);
+  color: white;
+}
+
+input[type="radio"][id="blue"]:checked + #label-blue {
+  background: #6666ff47;
+}
+input[type="radio"][id="blue"]:checked ~ .red,
+input[type="radio"][id="blue"]:checked ~ .green {
+  display: none;
+}
+input[type="radio"][id="red"]:checked + #label-red {
+  background: #ff446647;
+}
+input[type="radio"][id="red"]:checked ~ .blue,
+input[type="radio"][id="red"]:checked ~ .green {
+  display: none;
+}
+input[type="radio"][id="green"]:checked + #label-green {
+  background: #66dd9947;
+}
+input[type="radio"][id="green"]:checked ~ .blue,
+input[type="radio"][id="green"]:checked ~ .red {
+  display: none;
+}
+span.green {
+  background: #66dd9947;
+  color: black;
+  font-family: system-ui;
+  font-size: 11px;
+  padding: 3px;
+  margin: 3px;
+  font-weight: 300;
+  width: fit-content;
+}
+span.blue {
+  background: #6666ff47;
+  color: black;
+  font-family: system-ui;
+  font-size: 11px;
+  padding: 3px;
+  margin: 3px;
+  font-weight: 300;
+  width: fit-content;
+}
+span.red {
+  background: #ff446647;
+  color: black;
+  font-family: system-ui;
+  font-size: 11px;
+  padding: 3px;
+  margin: 3px;
+  font-weight: 300;
+  width: fit-content;
+}
+.tile {
+  flex: 0 0 300px;
+  /*   height: 330px; */
+  width: 100%;
+  transition: all 1s;
+  margin: 0.5%;
+  padding: 0.5%;
+  min-width: 35%;
+}
+.tile img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.tile .used-skill {
+  width: 1.7em;
+  position: relative;
+  top: -11px;
+  right: 11px;
+}
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #000;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-family: system-ui;
+  font-weight: 200;
+  font-size: 16px;
+}
+.btn:hover {
+  background-color: #dfdfdf;
+  transition: 0.5s;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
+  margin: 20px;
+}
+.card__image {
+  position: absolute;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui;
+  margin: 16px auto;
+}
+.skill-container h3 {
+  font-size: 25px;
+  font-weight: 100;
+}
+.skill-container p {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 6px;
+}
+.social-skills {
+  margin: auto 66px;
+  font-family: system-ui;
+  font-size: 18px;
+  font-weight: 200;
+}
+.social-skills a {
+  margin: auto 2px;
+  color: black;
+}
+.skill-container .card__image {
+  position: inherit;
+  text-align: center;
+}
+.skill-container .card__image img {
+  width: 30px;
+}
+.card {
+  background-color: rgb(247, 245, 245);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Rajdhani";
+  display: flex;
+  flex-direction: column;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 8px;
+}
+
+@media (max-width: 721px) {
+  .tile {
+    flex: none;
+    height: 330px;
+    width: 430px;
+    transition: all 1s;
+    margin: 0.5%;
+    padding: 0.5%;
+    min-width: 35%;
+  }
+}
+@media (max-width: 460px) {
+  .tile {
+    width: 330px;
+  }
+}
+@media (max-width: 320px) {
+  .tile {
+    width: 300px;
+  }
+}
