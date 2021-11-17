@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #FAF6F6;
 }
 p {
   font-family: system-ui;
@@ -17,7 +16,7 @@ p {
 /* About Me */
 .aboutMe {
   width: 100%;
-  background: #FAF6F6;
+  background: #FFFFFF;
 }
 .left {
   flex: 1 1 0px;
@@ -46,7 +45,7 @@ p {
   color: #252a32;
   position: relative;
   z-index: 1;
-  background: #FAF6F6;
+  background: #FFFFFF;
   display: inline;
   margin-bottom: 0.5em;
 }
@@ -74,7 +73,7 @@ p {
 }
 .social-Icons-Wrapper .icon {
   position: relative;
-  background-color: #FAF6F6;
+  background-color: #FFFFFF;
   padding: 15px;
   margin: 10px;
   width: 50px;
@@ -126,7 +125,7 @@ p {
     position: fixed;
     bottom: 0em;
     display: flex;
-    background: #FAF6F6;
+    background: #FFFFFF;
     width: 100%;
     justify-content: center;
   }
