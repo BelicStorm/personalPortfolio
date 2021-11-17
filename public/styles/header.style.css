@@ -47,7 +47,7 @@
   font-weight: 400;
   color: #111;
   overflow-y: hidden;
-  background: #ffffffad;
+  background: #FAF6F6;
 }
 @media (min-width: 54em) {
   .aboutHeader__title {
