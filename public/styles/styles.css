@@ -16,7 +16,7 @@ p {
 /* About Me */
 .aboutMe {
   width: 100%;
-  background: #F7E3DF;
+  background: #FAF6F6;
 }
 .left {
   flex: 1 1 0px;
@@ -45,7 +45,7 @@ p {
   color: #252a32;
   position: relative;
   z-index: 1;
-  background: #F7E3DF;
+  background: #FAF6F6;
   display: inline;
   margin-bottom: 0.5em;
 }
@@ -73,7 +73,7 @@ p {
 }
 .social-Icons-Wrapper .icon {
   position: relative;
-  background-color: #F7E3DF;
+  background-color: #FAF6F6;
   padding: 15px;
   margin: 10px;
   width: 50px;
@@ -125,7 +125,7 @@ p {
     position: fixed;
     bottom: 0em;
     display: flex;
-    background: #F7E3DF;
+    background: #FAF6F6;
     width: 100%;
     justify-content: center;
   }
