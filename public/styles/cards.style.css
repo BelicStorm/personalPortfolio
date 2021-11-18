@@ -102,7 +102,7 @@ span.red {
   transition: all 1s;
   margin: 0.5%;
   padding: 0.5%;
-  min-width: 35%;
+  min-width: 30%;
 }
 .tile img {
   height: auto;
@@ -176,7 +176,7 @@ span.red {
   margin: 6px;
 }
 .social-skills {
-  margin: auto 66px;
+  /* margin: auto 66px; */
   font-family: system-ui;
   font-size: 18px;
   font-weight: 200;
@@ -217,7 +217,11 @@ span.red {
   line-height: 1.5;
   margin: 8px;
 }
-
+@media (max-width: 800px) {
+  .social-skills {
+    margin: auto 66px;
+  }
+}
 @media (max-width: 721px) {
   .tile {
     flex: none;
@@ -232,6 +236,9 @@ span.red {
 @media (max-width: 460px) {
   .tile {
     width: 330px;
+  }
+  .social-skills {
+    margin: auto 20px;
   }
 }
 @media (max-width: 320px) {
