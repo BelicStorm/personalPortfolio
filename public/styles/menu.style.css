@@ -7,9 +7,8 @@
   font-family: "Rajdhani", sans-serif;
   font-size: 1rem;
   font-weight: 100;
-  line-height: 1.5;
   color: #252a32;
-  background: #FFFFFF;
+  background: #ffffff;
   list-style: none;
   text-decoration: none;
   position: fixed;
@@ -59,11 +58,20 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+.header .navbar .menu-item a:hover {
+  content: "";
+  border-bottom: 0.5px solid #000;
+  display: block;
+}
 
 @media only screen and (max-width: 768px) {
   .header .navbar {
     padding: 1rem 2rem;
     margin: 0 auto;
+  }
+  .header .navbar .menu-item a:hover {
+    border-bottom: 0;
+    display: inline;
   }
   .header .navbar .navbar-wrapper {
     position: fixed;
@@ -74,7 +82,7 @@
     z-index: -1;
     /* opacity: 0; */
     display: none;
-    background: #FFFFFF;
+    background: #ffffff;
     transition: all 0.3s ease;
   }
   .header .navbar .navbar-wrapper .menu {
@@ -128,7 +136,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: #FFFFFF;
+    background: rgb(51 49 49);
     border-radius: 2px;
     margin-left: 14px;
   }
@@ -161,6 +169,7 @@
   .header .navbar #nav:checked ~ .navbar-wrapper {
     z-index: 99;
     display: inline;
+    border: 0.5px#000000 solid;
   }
   .header .navbar #nav:checked ~ .navbar-wrapper .menu-item a {
     opacity: 1;
