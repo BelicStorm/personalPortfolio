@@ -212,10 +212,12 @@ span.red {
   flex-direction: column;
 }
 .card__text {
-  flex: 1 1 auto;
+ flex: 1 1 auto;
+  font-family: Arial;
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 8px;
+  color: #979797;
 }
 @media (max-width: 800px) {
   .social-skills {
