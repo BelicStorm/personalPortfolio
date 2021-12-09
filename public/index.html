@@ -6,146 +6,339 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Por estos lares me llaman Cristian Pardo y dicen que soy Técnico superior en desarrollo de aplicaciones web">   
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="/styles/icons/icon.png" type="image/x-icon">
+    <link rel="icon" href="./styles/icons/icon.png" type="image/x-icon">
     <title>Cristian Pardo Casanova</title>
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/menu.style.css" />
-    <link rel="stylesheet" href="/styles/header.style.css" />
-    <link rel="stylesheet" href="/styles/cards.style.css" />
-    <link rel="stylesheet" href="/styles/contactform.styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <script src="/js/index.js"></script>
+    <script src="./js/index.js"></script>
   </head>
   <body>
     <!-- Header  -->
-    <header class="header">
-      <nav class="navbar">
-        <a class="brand" href="#"><h1>Cristian Pardo</h1></a>
-        <input type="checkbox" id="nav" class="hidden" />
-        <label for="nav" class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div class="navbar-wrapper">
-          <ul class="menu">
-            <li class="menu-item"><a href="#about">Sobre mi</a></li>
-            <li class="menu-item"><a href="#skills">Habilidades</a></li>
-            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="menu-item"><a href="#contact">Contactame</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- About header -->
-      <section class="aboutHeader">
-        <section class="aboutHeader is-active">
-          <div class="aboutHeader__content">
-            <figure class="aboutHeader__figure">
-              <img
-                class="aboutHeader__img"
-               src="styles/imgs/me.jpg"
-               alt="Cristian Pardo Casanova"
-              ></img>
-            </figure>
+    <header>
+      <section class="tabs">
+        <div class="brandContainer">
+          <div class="logo">
+            <img src="./styles/imgs/me.jpg" title="Cristian Pardo Casanova"></img>
           </div>
-        </section>
-      </section>
-      <!-- AboutMe -->
-      <section class="page-wrapper aboutMe" id="about">
-        <div class="left">
-          <h2 class="title">¿Quién Soy?/</h2>
+          <div class="logo-text">
+            <h1>Cristian Pardo</h1>
+            <h3>El paso mas importante es siempre el siguiente</h3>
+          </div>
         </div>
-        <div class="rigth">
+        <nav class="tabs-container">
+          <a class="tab" href="#tab-es6">ES6</a>
+          <a class="tab" href="#tab-flexbox">Flexbox</a>
+          <a class="tab" href="#tab-react">React</a>
+          <a class="tab" href="#tab-other">Other</a>
+          <span class="tab-slider"></span>
+        </nav>
+      </section>
+      <div class="social-Icons-Wrapper">
+        <div class="icon">
+          <a title="Twitter" href="https://twitter.com/BelicStorm" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </span>
+        </div>
+        <div class="icon">
+          <a title="Linkedin" href="https://www.linkedin.com/in/cristian-pardo-casanova-a60251138/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a title="Gitlab" href="https://gitlab.com/BelicStorm" target="_blank">
+            <i class="fab fa-gitlab"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a title="Github" href="https://github.com/BelicStorm" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="slide about-tab" id="tab-es6">
           <h2 class="title">¿Quién Soy?/</h2>
           <div class="rigthContent">
             <p>Por estos lares me llaman Cristian Pardo y dicen que soy Técnico superior en desarrollo de aplicaciones web.</p>
             <p>Lo que si se es que me encanta leer, escribir, programar y montar maquetas. Sé trabajar solo y en equipo y no me da miedo hacer deploy los viernes.</p>
           </div>
-        </div>
       </section>
-      <!-- Portfolio -->
-      <section class="page-wrapper portfolio" id="portfolio">
-        <div class="center">
-          <div class="container">
-            <h2 class="title">Portfolio/</h2>
-            <div class="card-container">
-              <input type="radio" id="blue" name="color" />
-              <label for="blue" id="label-blue">Frontend</label>
-              <input type="radio" id="red" name="color" />
-              <label for="red" id="label-red">Backend</label>
-              <input type="radio" id="green" name="color" />
-              <label for="green" id="label-green">FullStack</label>
-              <input type="radio" id="reset" name="color" />
-              <label for="reset" id="label-reset">All</label>
-               <div class="tile blue">
-                <div class="card">
-                  <div class="card__image">
-                    <img
-                      class="used-skill"
-                      src="styles/icons/react.svg"
-                      alt="react skill"
-                    />
-                  </div>
-                  <div class="card__content">
-                    <div class="card__title">
-                      Diseño Landing para estudio de Tatuajes (WIP)
-                      <span class="blue">Frontend</span>
-                    </div>
-                    <p class="card__text">
-                     Diseño de una landing page de un estudio de tatuajes creada con NextJs
-                    </p>
-                    <a
-                      class="btn btn--block card__btn"
-                      href="https://github.com/BelicStorm/TattooPageTemplate"
-                      target="_blank"
-                      >Ver repositorio</a
-                    >
-                    <a
-                      class="btn btn--block card__btn"
-                      href="https://tattoo-page-template.vercel.app/"
-                      target="_blank"
-                      >Ver estudio</a
-                    >
-                  </div>
-                </div>
-              </div>
+      <section class="slide portfolio-tab" id="tab-flexbox">
+          <h2 class="title">Portfolio/</h2>
+          <div class="card-container">
+            <input type="radio" id="blue" name="color" />
+            <label for="blue" id="label-blue">Frontend</label>
+            <input type="radio" id="red" name="color" />
+            <label for="red" id="label-red">Backend</label>
+            <input type="radio" id="green" name="color" />
+            <label for="green" id="label-green">FullStack</label>
+            <input type="radio" id="reset" name="color" />
+            <label for="reset" id="label-reset">All</label>
               <div class="tile blue">
-                <div class="card">
-                  <div class="card__image">
-                    <img
-                      class="used-skill"
-                      src="styles/icons/gatsby.svg"
-                      alt="gatsby skill"
-                    />
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    class="used-skill"
+                    src="styles/icons/react.svg"
+                    alt="react skill"
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="card__title">
+                    Diseño Landing para estudio de Tatuajes (WIP)
+                    <span class="blue">Frontend</span>
                   </div>
-                  <div class="card__content">
-                    <div class="card__title">
-                      Portfolio Para interiorista
-                      <span class="blue">Frontend</span>
-                    </div>
-                    <p class="card__text">
-                      Portfolio creado para una estudiante de interiorismo, usando la tecnología Gatsby para testear la generación de sitios estáticos y el SSR.
-                      <a href="https://curriculum-portfolio.vercel.app"
-                        >Pincha para ver el portfolio</a
-                      >
-                    </p>
-                    <a
-                      class="btn btn--block card__btn"
-                      href="https://gitlab.com/BelicStorm/gatsby-test"
-                      target="_blank"
-                      >Ver repositorio</a
-                    >
-                  </div>
+                  <p class="card__text">
+                    Diseño de una landing page de un estudio de tatuajes creada con NextJs
+                  </p>
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://github.com/BelicStorm/TattooPageTemplate"
+                    target="_blank"
+                    >Ver repositorio</a
+                  >
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://tattoo-page-template.vercel.app/"
+                    target="_blank"
+                    >Ver estudio</a
+                  >
                 </div>
               </div>
-              <div class="tile red">
+            </div>
+            <div class="tile blue">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    class="used-skill"
+                    src="styles/icons/gatsby.svg"
+                    alt="gatsby skill"
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="card__title">
+                    Portfolio Para interiorista
+                    <span class="blue">Frontend</span>
+                  </div>
+                  <p class="card__text">
+                    Portfolio creado para una estudiante de interiorismo, usando la tecnología Gatsby para testear la generación de sitios estáticos y el SSR.
+                    <a href="https://curriculum-portfolio.vercel.app"
+                      >Pincha para ver el portfolio</a
+                    >
+                  </p>
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://gitlab.com/BelicStorm/gatsby-test"
+                    target="_blank"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tile red">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    class="used-skill"
+                    src="styles/icons/nodejs.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/graphql.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/apollo.svg"
+                    alt="gatsby skill"
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="card__title">
+                    Two NodeJs, One Graphql Subscription
+                    <span class="red">Backend</span>
+                  </div>
+                  <p class="card__text">
+                    Ejemplo practico en el que un servidor nodeJs (aka. servidor 2) necesita suscribirse a los cambios de un 
+                    servidor remoto (aka. servidor 1) para subir a este una imagen del entorno local del servidor 2.
+                  </p>
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://gitlab.com/BelicStorm/nodejssubtoothernodejs"
+                    target="_blank"
+                    >Ver en Gitlab</a
+                  >
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://github.com/BelicStorm/NodejsSubToOtherNodeJs"
+                    target="_blank"
+                    >Ver en Github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tile green">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    class="used-skill"
+                    src="styles/icons/react.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/redux.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/typescript.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                  class="used-skill"
+                  src="styles/icons/nodejs.svg"
+                  alt="gatsby skill"
+                />
+                  <img
+                  class="used-skill"
+                  src="styles/icons/docker.svg"
+                  alt="gatsby skill"
+                />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/graphql.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/apollo.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/postgresql.svg"
+                    alt="gatsby skill"
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="card__title">
+                    Gestión del horario
+                    <span class="green">FullStack</span>
+                  </div>
+                  <p class="card__text">
+                    App para la gestión y el control de los horarios. App orientada a empresas con múltiples
+                    departamentos y un elevado número de empleados. Apollo usa la arquitectura de Apollo Federation 1.
+                    <a
+                      href="https://docs.google.com/document/d/1erjCzACJG4UlYh2rQmZxUrMJPP64Ec7i3THSOoEAQjQ/edit?usp=sharing"
+                    >
+                      Ver el trabajo en google drive.
+                    </a>
+                  </p>
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://gitlab.com/BelicStorm/fct_daw_19_20"
+                    target="_blank"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tile red">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    class="used-skill"
+                    src="styles/icons/go.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/mysql.svg"
+                    alt="gatsby skill"
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="card__title">
+                    Golang Api Rest Compilation-Time Dependency Injection Test
+                    <span class="red">Backend</span>
+                  </div>
+                  <p class="card__text">
+                    Ejemplo sencillo de como crear una Api rest con Go
+                    (GinGonic) y Mysql (u otra tecnología de bd), con Gorm
+                    como ORM y Wire como inyector de dependencias.
+                  </p>
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://gitlab.com/BelicStorm/golang-gingonic-gorm-wire-mysql-apirest"
+                    target="_blank"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tile green">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    class="used-skill"
+                    src="styles/icons/angular.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/graphql.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/apollo.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/mongodb.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/docker.svg"
+                    alt="gatsby skill"
+                  />
+                  <img
+                    class="used-skill"
+                    src="styles/icons/nodejs.svg"
+                    alt="gatsby skill"
+                  />
+                </div>
+                <div class="card__content">
+                  <div class="card__title">
+                    Proyecto 2º D.A.W
+                    <span class="green">FullStack</span>
+                  </div>
+                  <p class="card__text">
+                    Aplicación que emula un escenario en el que un solo
+                    frontend requiere información de múltiples backends, con
+                    diferentes tecnologías y métodos de obtener datos. . 
+                    </a>
+                  </p>
+                  <a
+                    class="btn btn--block card__btn"
+                    href="https://gitlab.com/BelicStorm/daw2_project1"
+                    target="_blank"
+                    >Ver repositorio</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tile red">
                 <div class="card">
                   <div class="card__image">
                     <img
@@ -159,103 +352,29 @@
                       alt="gatsby skill"
                     />
                     <img
-                      class="used-skill"
-                      src="styles/icons/apollo.svg"
-                      alt="gatsby skill"
-                    />
+                    class="used-skill"
+                    src="styles/icons/apollo.svg"
+                    alt="gatsby skill"
+                  />
                   </div>
                   <div class="card__content">
                     <div class="card__title">
-                      Two NodeJs, One Graphql Subscription
+                      Test de implementación Apollo Federation
                       <span class="red">Backend</span>
                     </div>
                     <p class="card__text">
-                      Ejemplo practico en el que un servidor nodeJs (aka. servidor 2) necesita suscribirse a los cambios de un 
-                      servidor remoto (aka. servidor 1) para subir a este una imagen del entorno local del servidor 2.
+                      Ejemplo sencillo de como crear una Api con Graphql Apollo Federation 1.
                     </p>
                     <a
                       class="btn btn--block card__btn"
-                      href="https://gitlab.com/BelicStorm/nodejssubtoothernodejs"
-                      target="_blank"
-                      >Ver en Gitlab</a
-                    >
-                    <a
-                      class="btn btn--block card__btn"
-                      href="https://github.com/BelicStorm/NodejsSubToOtherNodeJs"
-                      target="_blank"
-                      >Ver en Github</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="tile green">
-                <div class="card">
-                  <div class="card__image">
-                    <img
-                      class="used-skill"
-                      src="styles/icons/react.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/redux.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/typescript.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                    class="used-skill"
-                    src="styles/icons/nodejs.svg"
-                    alt="gatsby skill"
-                  />
-                    <img
-                    class="used-skill"
-                    src="styles/icons/docker.svg"
-                    alt="gatsby skill"
-                  />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/graphql.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/apollo.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/postgresql.svg"
-                      alt="gatsby skill"
-                    />
-                  </div>
-                  <div class="card__content">
-                    <div class="card__title">
-                      Gestión del horario
-                      <span class="green">FullStack</span>
-                    </div>
-                    <p class="card__text">
-                      App para la gestión y el control de los horarios. App orientada a empresas con múltiples
-                      departamentos y un elevado número de empleados. Apollo usa la arquitectura de Apollo Federation 1.
-                      <a
-                        href="https://docs.google.com/document/d/1erjCzACJG4UlYh2rQmZxUrMJPP64Ec7i3THSOoEAQjQ/edit?usp=sharing"
-                      >
-                        Ver el trabajo en google drive.
-                      </a>
-                    </p>
-                    <a
-                      class="btn btn--block card__btn"
-                      href="https://gitlab.com/BelicStorm/fct_daw_19_20"
+                      href="https://gitlab.com/BelicStorm/graphql-apollo-federation-example"
                       target="_blank"
                       >Ver repositorio</a
                     >
                   </div>
                 </div>
-              </div>
-              <div class="tile red">
+            </div>
+            <div class="tile red">
                 <div class="card">
                   <div class="card__image">
                     <img
@@ -268,291 +387,138 @@
                       src="styles/icons/mysql.svg"
                       alt="gatsby skill"
                     />
-                  </div>
-                  <div class="card__content">
-                    <div class="card__title">
-                      Golang Api Rest Compilation-Time Dependency Injection Test
-                      <span class="red">Backend</span>
-                    </div>
-                    <p class="card__text">
-                      Ejemplo sencillo de como crear una Api rest con Go
-                      (GinGonic) y Mysql (u otra tecnología de bd), con Gorm
-                      como ORM y Wire como inyector de dependencias.
-                    </p>
-                    <a
-                      class="btn btn--block card__btn"
-                      href="https://gitlab.com/BelicStorm/golang-gingonic-gorm-wire-mysql-apirest"
-                      target="_blank"
-                      >Ver repositorio</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="tile green">
-                <div class="card">
-                  <div class="card__image">
                     <img
-                      class="used-skill"
-                      src="styles/icons/angular.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/graphql.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/apollo.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/mongodb.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/docker.svg"
-                      alt="gatsby skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/nodejs.svg"
-                      alt="gatsby skill"
-                    />
+                    class="used-skill"
+                    src="styles/icons/docker.svg"
+                    alt="gatsby skill"
+                  />
                   </div>
                   <div class="card__content">
                     <div class="card__title">
                       Proyecto 2º D.A.W
-                      <span class="green">FullStack</span>
+                      <span class="red">Backend</span>
                     </div>
                     <p class="card__text">
-                      Aplicación que emula un escenario en el que un solo
-                      frontend requiere información de múltiples backends, con
-                      diferentes tecnologías y métodos de obtener datos. . 
-                      </a>
+                      Proyecto conjunto realizado en el grado superior de D.A.W. 
+                      En este Proyecto me encargué de realizar un Backend con Go creando microservicios 
+                      que emulan los sistemas de una ciudad informatizada.
                     </p>
                     <a
                       class="btn btn--block card__btn"
-                      href="https://gitlab.com/BelicStorm/daw2_project1"
+                      href="https://github.com/juanlubel/Angular_Go_Micro_City_Project"
                       target="_blank"
                       >Ver repositorio</a
                     >
                   </div>
                 </div>
-              </div>
-              <div class="tile red">
-                  <div class="card">
-                    <div class="card__image">
-                      <img
-                        class="used-skill"
-                        src="styles/icons/nodejs.svg"
-                        alt="gatsby skill"
-                      />
-                      <img
-                        class="used-skill"
-                        src="styles/icons/graphql.svg"
-                        alt="gatsby skill"
-                      />
-                      <img
-                      class="used-skill"
-                      src="styles/icons/apollo.svg"
-                      alt="gatsby skill"
-                    />
-                    </div>
-                    <div class="card__content">
-                      <div class="card__title">
-                        Test de implementación Apollo Federation
-                        <span class="red">Backend</span>
-                      </div>
-                      <p class="card__text">
-                        Ejemplo sencillo de como crear una Api con Graphql Apollo Federation 1.
-                      </p>
-                      <a
-                        class="btn btn--block card__btn"
-                        href="https://gitlab.com/BelicStorm/graphql-apollo-federation-example"
-                        target="_blank"
-                        >Ver repositorio</a
-                      >
-                    </div>
-                  </div>
-              </div>
-              <div class="tile red">
-                  <div class="card">
-                    <div class="card__image">
-                      <img
-                        class="used-skill"
-                        src="styles/icons/go.svg"
-                        alt="gatsby skill"
-                      />
-                      <img
-                        class="used-skill"
-                        src="styles/icons/mysql.svg"
-                        alt="gatsby skill"
-                      />
-                      <img
-                      class="used-skill"
-                      src="styles/icons/docker.svg"
-                      alt="gatsby skill"
-                    />
-                    </div>
-                    <div class="card__content">
-                      <div class="card__title">
-                        Proyecto 2º D.A.W
-                        <span class="red">Backend</span>
-                      </div>
-                      <p class="card__text">
-                        Proyecto conjunto realizado en el grado superior de D.A.W. 
-                        En este Proyecto me encargué de realizar un Backend con Go creando microservicios 
-                        que emulan los sistemas de una ciudad informatizada.
-                      </p>
-                      <a
-                        class="btn btn--block card__btn"
-                        href="https://github.com/juanlubel/Angular_Go_Micro_City_Project"
-                        target="_blank"
-                        >Ver repositorio</a
-                      >
-                    </div>
-                  </div>
-              </div>
             </div>
           </div>
-        </div>
       </section>
-      <section class="page-wrapper aboutMe" id="about">
-        <div class="left">
-          <h2 class="title">Un poco de historia/</h2>
-        </div>
-        <div class="rigth">
-          <h2 class="title">Un poco de historia/</h2>
-          <div class="rigthContent">
+      <section class="slide moreAbout-tab" id="tab-react">
+          <h2 class="title">Mas Sobre Mi/</h2>
+          <div class="moreAbout">
               <ul class="social-skills">
-                  <li>Actualmente: Trabajando en Aplisein como Junior FullStack Dev. (o al menos eso me han dicho)</li>
-                  <li>2020: 3 meses de prácticas en <a href="https://www.linkedin.com/company/devopensource/?originalSubdomain=es" target="_blank">Devopensource</a> como QA tester con Selenium y Cypress</li>
-                  <li>2018-2020: Ciclo de grado superior D.A.W en <a href="https://portal.edu.gva.es/iestacio/" target="_blank"> IES l'Estació</a> </li>
-                  <li>2018: 3 meses de prácticas en <a href="https://www.caixaontinyent.es" target="_blank">Caixa Ontinyent</a> migrando un sistema de monitorización Nagios a OMD Consol Labs </li>
-                  <li>2016-2018: Ciclo de grado superior A.S.I.R en <a href="http://www.cipfpbatoi.es/index.php/ca/principal/" target="_blank"></a> </li>
+                  <li> <span class="bolder">Actualmente:</span> Trabajando en Aplisein como Junior FullStack Dev. (o al menos eso me han dicho)</li>
+                  <li><span class="bolder">2020:</span> 3 meses de prácticas en <a href="https://www.linkedin.com/company/devopensource/?originalSubdomain=es" target="_blank">Devopensource</a> como QA tester con Selenium y Cypress</li>
+                  <li><span class="bolder">2018-2020:</span> Ciclo de grado superior D.A.W en <a href="https://portal.edu.gva.es/iestacio/" target="_blank"> IES l'Estació</a> </li>
+                  <li><span class="bolder">2018:</span> 3 meses de prácticas en <a href="https://www.caixaontinyent.es" target="_blank">Caixa Ontinyent</a> migrando un sistema de monitorización Nagios a OMD Consol Labs </li>
+                  <li><span class="bolder">2016-2018:</span> Ciclo de grado superior A.S.I.R en <a href="http://www.cipfpbatoi.es/index.php/ca/principal/" target="_blank"></a> </li>
                 </ul>
           </div>
-        </div>
-      </section>
-      <!-- Mis Habilidades -->
-      <section class="page-wrapper skills" id="skills">
-        <div class="left">
-          <h2 class="title">Habilidades/</h2>
-        </div>
-        <div class="rigth">
-          <h2 class="title">Habilidades/</h2>
-          <div class="rigthContent">
-            <p>Aquí, como podrás ver, hay muchos dibujitos. Al menos intentaré contarte cuáles creo que son mis habilidades:</p>
+          <h2 class="title">Habilidades personales/</h2>
+          <div class="skills">
             <div class="skill-container">
-              <h3>Se me da bien:</h3>
-              <p>Estas tecnologías, puedo decir que las controlo ya sea porque me gustan y he hecho cosas con ellas varias veces o porque actualmente trabajo con ellas.</p>
-                <div class="card__image">
-                    <img
-                      class="used-skill"
-                      src="styles/icons/react.svg"
-                      alt="react skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/redux.svg"
-                      alt="redux skill"
-                    />
-                    <img
-                    class="used-skill"
-                    src="styles/icons/nodejs.svg"
-                    alt="nodejs skill"
-                  />
-                  <img
-                    class="used-skill"
-                    src="styles/icons/go.svg"
-                    alt="docker skill"
-                  />
-                    <img
-                    class="used-skill"
-                    src="styles/icons/docker.svg"
-                    alt="docker skill"
-                  />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/graphql.svg"
-                      alt="graphql skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/apollo.svg"
-                      alt="apollo skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/postgresql.svg"
-                      alt="postgresql skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/mongodb.svg"
-                      alt="mongodb skill"
-                    />
-                    <img
-                      class="used-skill"
-                      src="styles/icons/mysql.svg"
-                      alt="mysql skill"
-                    />
-                </div>
+              <p>Aquí, como podrás ver, hay muchos dibujitos. Al menos intentaré contarte cuáles creo que son mis habilidades:</p>
+                <ul class="social-skills">
+                  <li>Trabajo con ello: 
+                        <img
+                          class="used-skill"
+                          src="styles/icons/react.svg"
+                          alt="react skill"
+                        />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/redux.svg"
+                          alt="redux skill"
+                        />
+                        <img
+                        class="used-skill"
+                        src="styles/icons/nodejs.svg"
+                        alt="nodejs skill"
+                      />
+                        <img
+                        class="used-skill"
+                        src="styles/icons/docker.svg"
+                        alt="docker skill"
+                      />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/graphql.svg"
+                          alt="graphql skill"
+                        />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/apollo.svg"
+                          alt="apollo skill"
+                        />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/postgresql.svg"
+                          alt="postgresql skill"
+                        />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/mongodb.svg"
+                          alt="mongodb skill"
+                        />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/mysql.svg"
+                          alt="mysql skill"
+                        />
+                  </li>
+                  <li>Se me da bien:
+                    
+                      <img
+                          class="used-skill"
+                          src="styles/icons/go.svg"
+                          alt="docker skill"
+                        />
+                      <img
+                          class="used-skill"
+                          src="styles/icons/gatsby.svg"
+                          alt="gatsby skill"
+                        />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/nextjs.svg"
+                          alt="nextjs skill"
+                        />
+                        <img
+                          class="used-skill"
+                          src="styles/icons/typescript.svg"
+                          alt="typescript skill"
+                        />
+                   
+                  </li>
+                  <li>Soy sociable</li>
+                  <li>Curioso</li>
+                  <li>Trabajador</li>
+                  <li>Con un gran gusto musical. ¿No te lo crees? Échale un ojo a mi Spotify 
+                    <a href="https://open.spotify.com/user/k3r5vdy9iuh229vnzew892dkg?si=a8b25454c79e4c2e" target="_blank">
+                      <i class="fab fa-spotify"></i>
+                    </a>
+                  </li>
+                  <li>Leer mucho en poco tiempo. ¿Quieres ver que leo? Échale un ojo a mi Goodreads: 
+                    <a href="https://www.goodreads.com/user/show/117836981-belicstorm" target="_blank">
+                      <i class="fab fa-goodreads"></i>
+                    </a>
+                  </li>
+                </ul>
             </div>
-            <div class="skill-container">
-              <h3>Tengo nociones:</h3>
-              <p>Me gustan estas tecnologías y/o estoy estudiándolas.</p>
-              <div class="card__image">
-                <img
-                class="used-skill"
-                src="styles/icons/angular.svg"
-                alt="angular skill"
-              />
-              <img
-                  class="used-skill"
-                  src="styles/icons/gatsby.svg"
-                  alt="gatsby skill"
-                />
-                <img
-                  class="used-skill"
-                  src="styles/icons/nextjs.svg"
-                  alt="nextjs skill"
-                />
-                <img
-                  class="used-skill"
-                  src="styles/icons/typescript.svg"
-                  alt="typescript skill"
-                />
-                
-              </div>
-            </div>
-            <div class="skill-container">
-                <h3>Habilidades personales:</h3>
-                  <ul class="social-skills">
-                    <li>Soy sociable</li>
-                    <li>Curioso</li>
-                    <li>Trabajador</li>
-                    <li>Con un gran gusto musical. ¿No te lo crees? Échale un ojo a mi Spotify 
-                      <a href="https://open.spotify.com/user/k3r5vdy9iuh229vnzew892dkg?si=a8b25454c79e4c2e" target="_blank">
-                        <i class="fab fa-spotify"></i>
-                      </a>
-                    </li>
-                    <li>Leer mucho en poco tiempo. ¿Quieres ver que leo? Échale un ojo a mi Goodreads: 
-                      <a href="https://www.goodreads.com/user/show/117836981-belicstorm" target="_blank">
-                        <i class="fab fa-goodreads"></i>
-                      </a>
-                    </li>
-                  </ul>
-              </div>
           </div>
-        </div>
       </section>
-      <!-- Contact Me -->
-      <section class="page-wrapper contactMe" id="contact">
-        <div class="center">
+      <section class="slide" id="tab-other">
           <h2 class="title container">Contactame/</h2>
           <div id="thanks-container"></div>
           <!-- action="https://formspree.io/f/mgerqenw"
@@ -598,31 +564,10 @@
               />
             </div>
           </form>
-        </div>
       </section>
     </main>
-    <!-- Footer -->
-    <footer class="social-Icons-Wrapper">
-      <div class="icon">
-        <a title="Twitter" href="https://twitter.com/BelicStorm" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </span>
-      </div>
-      <div class="icon">
-        <a title="Linkedin" href="https://www.linkedin.com/in/cristian-pardo-casanova-a60251138/" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-      <div class="icon">
-        <a title="Gitlab" href="https://gitlab.com/BelicStorm" target="_blank">
-          <i class="fab fa-gitlab"></i>
-        </a>
-      </div>
-      <div class="icon">
-        <a title="Github" href="https://github.com/BelicStorm" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </footer>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
   </body>
 </html>

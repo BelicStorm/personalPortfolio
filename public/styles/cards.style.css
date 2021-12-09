@@ -1,8 +1,9 @@
-.container {
-  width: 90%;
+.portfolio-tab {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 .card-menu {
   display: flex;
@@ -17,25 +18,25 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.container label {
-  width: 23%;
-  float: left;
-  text-align: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  color: #222222;
-  padding: 0.5%;
-  margin: 0.5%;
-  margin-bottom: 30px;
-  cursor: pointer;
+.portfolio-tab label {
+  width: 34%;
+    float: left;
+    text-align: center;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    color: #222222;
+    padding: 1em 0em;
+    margin: 0.5% 1em;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
 input[type="radio"] {
   display: none;
 }
 
 .card-container label {
-  font-family: system-ui;
+  font-family: 'Lexend Exa', sans-serif;
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
@@ -68,7 +69,7 @@ input[type="radio"][id="green"]:checked ~ .red {
 span.green {
   background: #66dd9947;
   color: black;
-  font-family: system-ui;
+  font-family: 'Lexend Exa', sans-serif;
   font-size: 11px;
   padding: 3px;
   margin: 3px;
@@ -78,7 +79,7 @@ span.green {
 span.blue {
   background: #6666ff47;
   color: black;
-  font-family: system-ui;
+  font-family: 'Lexend Exa', sans-serif;
   font-size: 11px;
   padding: 3px;
   margin: 3px;
@@ -88,7 +89,7 @@ span.blue {
 span.red {
   background: #ff446647;
   color: black;
-  font-family: system-ui;
+  font-family: 'Lexend Exa', sans-serif;
   font-size: 11px;
   padding: 3px;
   margin: 3px;
@@ -112,8 +113,7 @@ span.red {
 .tile .used-skill {
   width: 1.7em;
   position: relative;
-  top: -11px;
-  right: 11px;
+  top: 10px;
 }
 .btn {
   background-color: white;
@@ -123,7 +123,7 @@ span.red {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-family: system-ui;
+  font-family: 'Lexend Exa', sans-serif;
   font-weight: 200;
   font-size: 16px;
 }
@@ -148,7 +148,8 @@ span.red {
   margin: 20px;
 }
 .card__image {
-  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 40rem) {
   .cards__item {
@@ -163,7 +164,7 @@ span.red {
 .skill-container {
   display: flex;
   flex-direction: column;
-  font-family: system-ui;
+  font-family: 'Lexend Exa', sans-serif;
   margin: 16px auto;
 }
 .skill-container h3 {
@@ -177,7 +178,7 @@ span.red {
 }
 .social-skills {
   /* margin: auto 66px; */
-  font-family: system-ui;
+  font-family: 'Lexend Exa', sans-serif;
   font-size: 18px;
   font-weight: 200;
 }
@@ -193,7 +194,7 @@ span.red {
   width: 30px;
 }
 .card {
-  background-color: rgb(247, 245, 245);
+  border: black 1px solid;
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -202,18 +203,18 @@ span.red {
 }
 
 .card__title {
-  color: #696969;
-  font-size: 1.25rem;
-  font-weight: 700;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: "Rajdhani";
+  font-family: 'Lexend Exa', sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .card__text {
  flex: 1 1 auto;
-  font-family: Arial;
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 8px;
@@ -227,7 +228,7 @@ span.red {
 @media (max-width: 721px) {
   .tile {
     flex: none;
-    height: 330px;
+    height: auto;
     width: 430px;
     transition: all 1s;
     margin: 0.5%;
@@ -243,8 +244,13 @@ span.red {
     margin: auto 20px;
   }
 }
+@media (max-width: 450px) {
+  .card-container label {
+    font-size: 0.7em;
+  }
+}
 @media (max-width: 320px) {
   .tile {
-    width: 300px;
+    width: 301px;
   }
 }

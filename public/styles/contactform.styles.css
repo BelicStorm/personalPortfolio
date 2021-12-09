@@ -3,7 +3,7 @@
 }
 #thanks-container {
   width: 50%;
-  margin: 4em auto;
+  margin: 4em auto auto auto;
   text-align: center;
 }
 #thanks-container p {
