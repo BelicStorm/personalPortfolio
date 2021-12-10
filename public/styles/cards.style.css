@@ -166,6 +166,10 @@ span.red {
   flex-direction: column;
   font-family: 'Lexend Exa', sans-serif;
   margin: 16px auto;
+  gap: 1em;
+}
+.skill-container .title{
+  align-self: center;
 }
 .skill-container h3 {
   font-size: 25px;
