@@ -7,7 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior:smooth;
+}
 body {
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -29,6 +31,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.arrow-down {
+  width: 70px  ;
+  margin-top: 5em;
+  margin-bottom: -5em;
 }
 .tabs{
   color: #fff;  
