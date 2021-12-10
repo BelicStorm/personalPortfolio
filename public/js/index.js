@@ -31,7 +31,7 @@ window.onload = async () => {
     constructor() {
       this.currentId = null;
       this.currentTab = null;
-      this.tabContainerHeight = 45;
+      this.tabContainerHeight = 60;
       let self = this;
       let heroTab = document.querySelectorAll(".tab")
       heroTab.forEach(element=>{

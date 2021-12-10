@@ -43,10 +43,11 @@
   height: 36px;
   border-width: 0 0 1px 0;
   border-color: #000;
-  font-family: Lusitana, serif;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
+  background-color: #fff0;
 }
 .contact-form .input-text:focus {
   outline: none;
@@ -55,7 +56,7 @@
   position: absolute;
   left: 20px;
   bottom: 11px;
-  font-family: Lusitana, serif;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
@@ -76,4 +77,9 @@
   padding: 8px 16px;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 570px) {
+  .row .col.x-50 {
+    width: 100%;
+  }
 }
