@@ -137,6 +137,9 @@ a {
 .moreAbout-tab li img{
  width: 30px;
 }
+.moreAbout-tab li a{
+  border-bottom: 0.5px #c1c1c1 solid;
+ }
 .social-Icons-Wrapper {
   z-index: 100000;
   background: #fff;
