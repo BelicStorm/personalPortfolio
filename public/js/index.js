@@ -1,10 +1,40 @@
 window.onload = async () => {
+  function ValidateEmail(mail) {
+   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+      return (true)
+    }
+      return (false)
+  }
+  function ValidateText(text) {
+    if (text.trim().length > 0){
+       return (true)
+     }
+       return (false)
+  }
+  /* Cosas del formulario */
   const form = document.getElementById("contact-form");
   const submitBtn = document.getElementById("submit");
   const thanks = document.getElementById("thanks-container");
   submitBtn.addEventListener("click", async () => {
-    thanksFunction();
-    await postData("https://formspree.io/f/mgerqenw");
+    const emailIsValid = ValidateEmail(document.getElementsByName("email")[0].value)
+    const emailErrorSpan = document.getElementById("email-error")
+    const nameIsValid = ValidateText(document.getElementsByName("name")[0].value)
+    const nameErrorSpan = document.getElementById("name-error")
+    const messageIsValid = ValidateText(document.getElementsByName("message")[0].value)
+    const messageErrorSpan = document.getElementById("message-error")
+    if (emailIsValid && nameIsValid && messageIsValid) {
+      emailErrorSpan.textContent = ""
+      nameErrorSpan.textContent = ""
+      messageErrorSpan.textContent = ""
+      thanksFunction();
+      await postData("https://formspree.io/f/mgerqenw");
+    } else {
+      emailIsValid ? emailErrorSpan.textContent="" : emailErrorSpan.textContent = "El E-mail introducido no es valido o el input esta vacio"
+      nameIsValid ? nameErrorSpan.textContent="" : nameErrorSpan.textContent = "El Nombre introducido no es valido o el input esta vacio"
+      messageIsValid ? messageErrorSpan.textContent="" : messageErrorSpan.textContent = "El Mensaje introducido no es valido o el input esta vacio"
+      console.log("error");
+    }
+
   });
   function thanksFunction() {
     form.style.display = "none";
@@ -26,6 +56,8 @@ window.onload = async () => {
     });
   }
 
+
+  /* Animaciones de la navegacion */
   class StickyNavigation {
 	
     constructor() {

@@ -32,7 +32,9 @@
 .row .col.x-100 {
   width: 100%;
 }
-
+.error {
+  color: red;
+}
 .contact-form .form-field {
   position: relative;
   margin: 32px 0;

@@ -69,7 +69,9 @@
           <div class="rigthContent">
             <p>Por estos lares me llaman Cristian Pardo y dicen que soy Técnico superior en desarrollo de aplicaciones web.</p>
             <br/>
-            <p>Soy resolutivo y que trabajo bien en equipo. Mi objetivo, al final del día, es dejar huella y poder decir que algo mío está siendo útil.</p>
+            <p>Quiero creer que soy FullStack Developer especializado en tecnologias basadas en JS.</p>
+            <p>Soy resolutivo y trabajo bien en equipo. Mi objetivo, al final del día, es dejar huella y poder decir que algo mío está siendo útil.</p>
+            <p>A veces escribo relatos y creo juegos de mesa, pero esa es otra historia.</p>
           </div>
       </section>
       <section class="slide portfolio-tab" id="tab-portfolio">
@@ -83,13 +85,13 @@
             <label for="green" id="label-green">FullStack</label>
             <input type="radio" id="reset" name="color" />
             <label for="reset" id="label-reset">All</label>
-              <div class="tile blue">
+            <div class="tile blue">
               <div class="card">
                 <div class="card__image">
                   <img
                     class="used-skill"
-                    src="styles/icons/react.svg"
-                    alt="react skill"
+                    src="styles/icons/nextjs.svg"
+                    alt="next skill"
                   />
                 </div>
                 <div class="card__content">
@@ -493,8 +495,8 @@
                         />
                         <img
                         class="used-skill"
-                        src="styles/icons/redux.svg"
-                        alt="redux skill"
+                        src="styles/icons/nextjs.svg"
+                        alt="next skill"
                       />
                         <img
                           class="used-skill"
@@ -532,42 +534,19 @@
             target="_blank" -->
           <form id="contact-form" class="contact-form row">
             <div class="form-field col x-50">
-              <input
-                id="name"
-                name="name"
-                class="input-text js-input"
-                type="text"
-                required
-                placeholder="Name"
-              />
+              <input id="name" name="name" class="input-text js-input "type="text" required placeholder="Name"/>
+              <span id="name-error" class="error"></span>
             </div>
             <div class="form-field col x-50">
-              <input
-                id="email"
-                name="email"
-                class="input-text js-input"
-                type="email"
-                placeholder="E-mail"
-                required
-              />
+              <input id="email" name="email" class="input-text js-input" type="email" placeholder="E-mail" required/>
+              <span id="email-error" class="error"></span>
             </div>
             <div class="form-field col x-100">
-              <input
-                id="message"
-                name="message"
-                class="input-text js-input"
-                type="text"
-                placeholder="Message"
-                required
-              />
+              <input id="message" name="message" class="input-text js-input" type="text" placeholder="Message" required/>
+              <span id="message-error" class="error"></span>
             </div>
             <div class="form-field col x-100 align-center">
-              <input
-                id="submit"
-                class="submit-btn"
-                type="button"
-                value="Submit"
-              />
+              <input id="submit" class="submit-btn" type="button" value="Submit" />
             </div>
           </form>
       </section>
