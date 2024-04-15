@@ -49,21 +49,32 @@ input[type="radio"][id="blue"]:checked + #label-blue {
   background: #6666ff47;
 }
 input[type="radio"][id="blue"]:checked ~ .red,
+input[type="radio"][id="green"]:checked ~ .purple,
 input[type="radio"][id="blue"]:checked ~ .green {
   display: none;
 }
 input[type="radio"][id="red"]:checked + #label-red {
   background: #ff446647;
 }
-input[type="radio"][id="red"]:checked ~ .blue,
+input[type="radio"][id="red"]:checked ~ .purple,
+input[type="radio"][id="green"]:checked ~ .blue,
 input[type="radio"][id="red"]:checked ~ .green {
   display: none;
 }
 input[type="radio"][id="green"]:checked + #label-green {
   background: #66dd9947;
 }
+input[type="radio"][id="green"]:checked ~ .purple,
 input[type="radio"][id="green"]:checked ~ .blue,
 input[type="radio"][id="green"]:checked ~ .red {
+  display: none;
+}
+input[type="radio"][id="purple"]:checked + #label-purple {
+  background: #9e66dd47;
+}
+input[type="radio"][id="purple"]:checked ~ .blue,
+input[type="radio"][id="purple"]:checked ~ .green,
+input[type="radio"][id="purple"]:checked ~ .red {
   display: none;
 }
 span.green {
